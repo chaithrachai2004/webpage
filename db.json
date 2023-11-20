@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "chai",
+      "complted": false,
+      "id": 2
+    },
+    {
+      "title": "chaii",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "title": "flower",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2wbBAhZSlOv9an-vBMdaw_Q9Lur_5rGiOIw&usqp=CAU",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "title": "chaiiiiiii",
+      "completed": false,
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
