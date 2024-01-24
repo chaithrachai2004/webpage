@@ -1,0 +1,6 @@
+num1=(3,5,2,2,2,2,6,5,8)
+num1.count(2)
+sum(num1)
+len(num1)
+max(num1)
+min(num1)
