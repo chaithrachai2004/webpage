@@ -1,0 +1,10 @@
+import ctypes as ct 
+# value_1 variable stores an integer 
+# of type Ctypes (not a regular integer) 
+value_1 = ct.c_int(10) 
+
+# printing the type of value_1 
+print(value_1) 
+
+# printing the value which value_1 stores 
+print(value_1.value)
