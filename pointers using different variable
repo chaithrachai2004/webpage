@@ -1,0 +1,32 @@
+import ctypes as ct 
+
+# storing a ctypes long value 
+value_1 = ct.c_long(10) 
+
+# using pointer() method we are pointing to the 
+# value_1 variable and storing it in ptr 
+ptr = ct.pointer(value_1) 
+
+print("Contents of value_1 : " , 
+	value_1) 
+print("Real value stored in value_1 : ", 
+	value_1.value) 
+print("Address of value_1 : ", 
+	id(value_1.value)) 
+
+# If we want to print the contents of a pointer 
+# type variable then need to use .contents 
+# otherwise only writing the variable is enough like above 
+print("Contents of ptr variable : ", 
+	ptr.contents) 
+
+# To print the value stored in the address 
+# pointed by that pointer variable 
+# we need to use .value after .contents 
+print("The value at which ptr points at : ", 
+	ptr.contents.value) 
+
+# Printing the address of the value to 
+# which the ptr variable points at 
+print("Address of that value which is \ 
+pointed and stored in ptr : ",id(ptr.contents.value))
