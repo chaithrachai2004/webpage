@@ -1,0 +1,8 @@
+import ctypes as ct 
+
+# Creating a variable ptr2 which will act as a void pointer 
+# We will not point it to any other memory location 
+ptr2 = ct.POINTER(ct.c_int) 
+
+# Trying to print a void pointer 
+print(ptr2)
