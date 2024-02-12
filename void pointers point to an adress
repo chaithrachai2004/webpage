@@ -1,0 +1,23 @@
+import ctypes as ct 
+
+value_1 = ct.c_int(10) 
+
+# Creating a void Pointer ptr2 
+ptr2 = ct.POINTER(ct.c_int) 
+
+# Trying to print the contents of the void 
+# pointer before pointing it to any variable 
+print("Contents of Void Pointer : ", 
+	ptr2.contents) 
+
+# Now pointing the ptr2 variable to the value_1 
+# variable which is a ctype c_int 
+ptr2.contents = value_1 
+
+# Now again printing the contents of the ptr2 variable 
+print("Contents of void pointer after \ 
+pointing it to a variable : ",ptr2.contents) 
+
+# Printing the value stored in the Void Pointer 
+print("Value stored by Void Pointer : ", 
+	ptr2.contents.value) 
